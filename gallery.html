@@ -1,108 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - God loves the Trinity</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - God loves the Trinity</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="main-header">
-        <div class="header-section">
-            <h1>God loves the Trinity</h1>
-            <p class="tagline">Divine Cuisine for Sacred Moments</p>
-        </div>
-    </header>
-
+  <!-- Task 1: Flexbox Header / Nav -->
+  <header class="main-header">
+    <div class="logo">God loves the Trinity</div>
     <nav class="navigation">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="booking.html">Reservations</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reserve.html">Reservations</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <main>
-        <section id="gallery-header">
-            <h1>Restaurant Gallery</h1>
-            <p class="highlighted-text">Take a visual tour of our divine space and cuisine</p>
-        </section>
+  <main>
+    <section id="gallery-header" style="text-align:center; padding: 20px;">
+      <h1>Restaurant Gallery</h1>
+      <p class="highlighted-text">Take a visual tour of our divine space and cuisine</p>
+    </section>
 
-        <section class="about-content">
-            <h2>Our Beautiful Restaurant</h2>
-            <p>Step into God loves the Trinity and experience the warm, welcoming atmosphere that makes every meal special. From our elegant dining room to our carefully crafted dishes, every detail is designed to create an unforgettable experience.</p>
-        </section>
+    <section class="about-content" style="max-width:900px; margin:0 auto;">
+      <h2>Our Beautiful Restaurant</h2>
+      <p>Step into God loves the Trinity and experience the warm, welcoming atmosphere that makes every meal special. From our elegant dining room to our carefully crafted dishes, every detail is designed to create an unforgettable experience.</p>
+    </section>
 
-        <section class="menu-section">
-            <h2>Interior & Atmosphere</h2>
-            <div class="gallery-grid">
-                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&h=300&fit=crop" alt="Main dining room" class="gallery-image">
-                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=300&fit=crop" alt="Restaurant interior" class="gallery-image">
-                <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=400&h=300&fit=crop" alt="Cozy seating area" class="gallery-image">
-                <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop" alt="Bar area" class="gallery-image">
-            </div>
-        </section>
+    <!-- Task 4: Grid Gallery with captions -->
+    <section class="gallery">
+      <!-- 9+ items -->
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&h=400&fit=crop" alt="Main dining room"><div class="caption">Main dining room</div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=400&fit=crop" alt="Restaurant interior"><div class="caption">Restaurant interior</div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=600&h=400&fit=crop" alt="Cozy seating area"><div class="caption">Cozy seating area</div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=400&fit=crop" alt="Bar area"><div class="caption">Bar area</div></div>
 
-        <section class="menu-section">
-            <h2>Our Divine Dishes</h2>
-            <div class="gallery-grid">
-                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop" alt="Pasta dish" class="gallery-image">
-                <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop" alt="Gourmet burger" class="gallery-image">
-                <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=300&fit=crop" alt="Salmon dinner" class="gallery-image">
-                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&h=300&fit=crop" alt="Dessert platter" class="gallery-image">
-            </div>
-        </section>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=600&h=400&fit=crop" alt="Pasta dish"><div class="caption">Pasta dish</div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=600&h=400&fit=crop" alt="Gourmet burger"><div class="caption">Gourmet burger</div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=600&h=400&fit=crop" alt="Salmon dinner"><div class="caption">Salmon dinner</div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&h=400&fit=crop" alt="Dessert platter"><div class="caption">Dessert platter</div></div>
 
-        <section class="menu-section">
-            <h2>Special Events</h2>
-            <div class="gallery-grid">
-                <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=400&h=300&fit=crop" alt="Private dining event" class="gallery-image">
-                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop" alt="Wedding celebration" class="gallery-image">
-                <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=400&h=300&fit=crop" alt="Birthday celebration" class="gallery-image">
-                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=300&fit=crop" alt="Business dinner" class="gallery-image">
-            </div>
-        </section>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&h=400&fit=crop" alt="Private dining event"><div class="caption">Private dining</div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop" alt="Wedding celebration"><div class="caption">Wedding celebration</div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=600&h=400&fit=crop" alt="Birthday celebration"><div class="caption">Birthday celebration</div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=400&fit=crop" alt="Business dinner"><div class="caption">Business dinner</div></div>
+    </section>
 
-        <section class="about-content">
-            <h2>Meet Our Team</h2>
-            <p>Our dedicated staff is committed to providing you with exceptional service and an unforgettable dining experience.</p>
-            <div class="chef-info">
-                <img src="https://images.unsplash.com/photo-1583394293214-28a4b0c0a0e1?w=200&h=200&fit=crop&crop=face" alt="Head Chef Antonio" class="round-image">
-                <div class="chef-text">
-                    <h3>Our Talented Kitchen Team</h3>
-                    <p>Led by Head Chef Antonio Rossi, our kitchen team brings passion and expertise to every dish. With years of experience in fine dining, they ensure that each plate that leaves our kitchen meets our high standards of quality and presentation.</p>
-                </div>
-            </div>
-        </section>
+    <section class="cta-section">
+      <h2>Experience It Yourself</h2>
+      <p>Pictures can only tell part of the story. Come visit us and experience the divine difference!</p>
+      <a href="reserve.html" class="button-style">Make a Reservation</a>
+    </section>
+  </main>
 
-        <section class="features-section">
-            <div class="feature-box">
-                <h3>Perfect for Any Occasion</h3>
-                <p>Whether it's a romantic dinner, family celebration, or business meeting, our restaurant provides the perfect setting.</p>
-            </div>
-            <div class="feature-box">
-                <h3>Fresh Daily</h3>
-                <p>All our dishes are prepared fresh daily using the finest seasonal ingredients from local suppliers.</p>
-            </div>
-            <div class="feature-box">
-                <h3>Award-Winning Service</h3>
-                <p>Our team has been recognized for excellence in hospitality and customer service by the local restaurant association.</p>
-            </div>
-        </section>
-
-        <section class="cta-section">
-            <h2>Experience It Yourself</h2>
-            <p>Pictures can only tell part of the story. Come visit us and experience the divine difference!</p>
-            <a href="booking.html" class="button-style">Make a Reservation</a>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 God loves the Trinity Restaurant. All rights reserved.</p>
-        <p>Address: 123 Divine Street, Heaven's Gate City</p>
-    </footer>
+  <footer>
+    <p>&copy; 2024 God loves the Trinity Restaurant. All rights reserved.</p>
+    <p>Address: 123 Divine Street, Heaven's Gate City</p>
+  </footer>
 </body>
 </html>
